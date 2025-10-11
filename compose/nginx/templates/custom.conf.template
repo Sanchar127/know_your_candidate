@@ -1,0 +1,15 @@
+server {
+    listen ${NGINX_HTTP_PORT};
+
+    location / {
+        proxy_pass http://web:${APP_PORT};
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    location /api/ {
+        proxy_pass http://web:${APP_PORT};
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}

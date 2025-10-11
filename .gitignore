@@ -1,0 +1,40 @@
+# Python virtual environments
+venv/
+__pycache__/
+*.pyc
+
+# Redis dump files
+data/redis/
+*.rdb
+*.dfs
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node.js / frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+.next/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+.zipfrontend.zip
